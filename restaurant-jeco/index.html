@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maison Serein - European dining dengan suasana sederhana, tenang, dan elegan.">
+    <title>Maison Serein | European Dining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Maison <span>Serein</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#reservation" class="nav-button">Reservation</a>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow">EUROPEAN DINING · EST. 2026</p>
+                <h1>A quiet place for<br><span>good food & good thoughts.</span></h1>
+                <p class="hero-text">
+                    Hidangan bergaya Eropa dengan rasa yang sederhana, bahan yang jujur,
+                    dan suasana yang tidak berlebihan.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="button primary">Lihat Menu</a>
+                    <a href="#about" class="button secondary">Tentang Kami</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="section-heading">
+                <p class="eyebrow">OUR STORY</p>
+                <h2>Tidak perlu ramai untuk terasa berkesan.</h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        Maison Serein dibangun dari gagasan sederhana: restoran tidak harus
+                        terlihat berlebihan untuk memberikan pengalaman yang berkesan.
+                        Kami menggabungkan menu Eropa klasik dengan penyajian yang bersih
+                        dan suasana yang tenang.
+                    </p>
+                    <p>
+                        Setiap hidangan dibuat untuk dinikmati perlahan. Bukan sekadar makan,
+                        tetapi memberi ruang untuk berbicara, berpikir, dan menikmati waktu.
+                    </p>
+                </div>
+                <div class="quote-box">
+                    <p>“Good food does not need to shout.”</p>
+                    <small>— Maison Serein</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="section philosophy">
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <span>01</span>
+                    <h3>Simple</h3>
+                    <p>Komposisi bahan tidak dibuat rumit agar rasa utama tetap terasa.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span>02</span>
+                    <h3>Precise</h3>
+                    <p>Setiap proses diperhatikan dari tingkat kematangan sampai penyajian.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span>03</span>
+                    <h3>Personal</h3>
+                    <p>Ruang makan dirancang untuk percakapan, bukan sekadar foto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu-section">
+            <div class="section-heading center">
+                <p class="eyebrow">OUR MENU</p>
+                <h2>European Table</h2>
+                <p>Menu pilihan yang sederhana, familiar, dan tetap mempunyai karakter.</p>
+            </div>
+
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="main">Main Course</button>
+                <button class="filter-btn" data-filter="dessert">Dessert</button>
+                <button class="filter-btn" data-filter="drink">Drink</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card" data-category="main">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" alt="Steak au Poivre">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Steak au Poivre</h3><span>$18</span></div>
+                        <p>Grilled beef, black pepper sauce, roasted potato, dan seasonal vegetables.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="main">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Truffle Risotto">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Truffle Risotto</h3><span>$15</span></div>
+                        <p>Risotto creamy dengan parmesan, mushroom, dan aroma truffle yang ringan.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="main">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="Tagliatelle Bolognese">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Tagliatelle Bolognese</h3><span>$13</span></div>
+                        <p>Pasta handmade dengan slow-cooked beef ragù dan parmesan.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="main">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80" alt="Salmon Lemon Butter">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Salmon Lemon Butter</h3><span>$16</span></div>
+                        <p>Pan-seared salmon, lemon butter sauce, asparagus, dan roasted potato.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dessert">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=80" alt="Classic Tiramisu">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Classic Tiramisu</h3><span>$8</span></div>
+                        <p>Mascarpone, espresso, cocoa, dan ladyfinger dengan rasa yang lembut.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dessert">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80" alt="Chocolate Fondant">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Chocolate Fondant</h3><span>$9</span></div>
+                        <p>Warm chocolate cake dengan bagian tengah yang lembut dan vanilla cream.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="drink">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="House Cappuccino">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>House Cappuccino</h3><span>$5</span></div>
+                        <p>Espresso dengan steamed milk dan foam yang halus.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="drink">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Berry Sparkling">
+                    <div class="menu-info">
+                        <div class="menu-top"><h3>Berry Sparkling</h3><span>$6</span></div>
+                        <p>Mixed berries, sparkling water, lemon, dan sedikit mint.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="section-heading center">
+                <p class="eyebrow">GALLERY</p>
+                <h2>Momen di Maison Serein</h2>
+                <p>Beberapa gambaran suasana, hidangan, dan detail meja makan kami.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Interior restoran">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80" alt="Hidangan restoran">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80" alt="Meja makan">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Suasana restoran">
+                </figure>
+                <figure class="gallery-item video-card">
+                    <div class="video-placeholder">
+                        <button id="playVideo" aria-label="Putar video">▶</button>
+                        <span>Restaurant Moment</span>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation">
+            <div>
+                <p class="eyebrow">MAKE A RESERVATION</p>
+                <h2>Meja yang tenang untuk malam yang baik.</h2>
+            </div>
+            <form id="reservationForm">
+                <input type="text" id="name" placeholder="Nama" required>
+                <input type="date" id="date" required>
+                <input type="number" id="guests" min="1" max="20" placeholder="Jumlah tamu" required>
+                <button type="submit" class="button primary">Book Table</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div>
+            <div class="logo">Maison <span>Serein</span></div>
+            <p>European dining with a quiet character.</p>
+        </div>
+        <div>
+            <h4>Address</h4>
+            <p>Jl. Margonda Raya No. 27,<br>Depok, Jawa Barat, Indonesia</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>(021) 777 652<br>hello@maisonserein.id</p>
+        </div>
+        <div>
+            <h4>Hours</h4>
+            <p>Tue — Sun<br>11:00 — 22:00</p>
+        </div>
+        <div class="copyright">
+            © 2026 Maison Serein. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div id="videoModal" class="modal" aria-hidden="true">
+        <div class="modal-box">
+            <button id="closeModal" class="close-modal" aria-label="Tutup">&times;</button>
+            <video controls preload="metadata">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+            <p>Video demo. Bisa diganti dengan video restoran milik sendiri.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
