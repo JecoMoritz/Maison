@@ -36,7 +36,65 @@
       <p>Pilihan sederhana, familiar, dan tetap punya karakter.</p>
     </div></section>
 
-    <section class="section">
+    <!-- ==========================================================
+         BAGIAN TUGAS: ORDERED LIST & NESTED LIST
+         Menjelaskan langkah pemesanan (ol) dan struktur kategori
+         menu secara bertingkat (ul di dalam ul).
+         ========================================================== -->
+    <section class="section list-demo">
+      <div class="container">
+        <h2>Cara Memesan Makanan</h2>
+        <p>
+          Untuk memastikan setiap tamu mendapat pengalaman yang nyaman, pemesanan
+          di Maison Serein mengikuti alur sederhana berikut. Ikuti langkah di
+          bawah ini dari awal sampai makanan diantar ke meja Anda.
+        </p>
+
+        <!-- Ordered list: urutan langkah penting, jadi pakai <ol> bukan <ul> -->
+        <ol class="steps-list">
+          <li>Pelanggan duduk di meja yang telah ditentukan oleh pramusaji.</li>
+          <li>Pramusaji membagikan buku menu dan menjelaskan menu spesial hari itu.</li>
+          <li>Pelanggan memilih hidangan dari kategori appetizer, main course, dessert, atau beverage.</li>
+          <li>Pramusaji mencatat pesanan, termasuk permintaan khusus seperti alergi bahan tertentu.</li>
+          <li>Pesanan diteruskan ke dapur untuk mulai diproses oleh chef.</li>
+          <li>Makanan dan minuman diantar ke meja sesuai urutan penyajian yang tepat.</li>
+        </ol>
+
+        <h2>Struktur Kategori Menu</h2>
+        <p>
+          Menu Maison Serein terbagi menjadi tiga kelompok besar. Setiap kelompok
+          berisi beberapa pilihan hidangan, seperti terlihat pada daftar bertingkat
+          berikut.
+        </p>
+
+        <!-- Nested list: <ul> kategori utama, di dalamnya ada <ul> berisi item menu -->
+        <ul class="category-list">
+          <li>Main Course
+            <ul>
+              <li>Steak au Poivre</li>
+              <li>Truffle Risotto</li>
+              <li>Tagliatelle Bolognese</li>
+              <li>Salmon Lemon Butter</li>
+            </ul>
+          </li>
+          <li>Dessert
+            <ul>
+              <li>Classic Tiramisu</li>
+              <li>Chocolate Fondant</li>
+              <li>Crème Brûlée</li>
+            </ul>
+          </li>
+          <li>Beverage
+            <ul>
+              <li>House Cappuccino</li>
+              <li>Berry Sparkling</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
       <div class="container">
         <!-- Tombol filter: data-filter dibaca oleh js/script.js -->
         <div class="filters" role="group" aria-label="Filter kategori menu">
