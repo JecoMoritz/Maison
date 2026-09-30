@@ -158,6 +158,42 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: normal; line-height: 1.
 .site-footer .logo { display: inline-block; margin-bottom: 10px; }
 .copyright { width: min(1120px, 100%); margin: 36px auto 0; padding-top: 20px; border-top: 1px solid #2a352f; font-size: 12px; color: #8b958e; }
 
+/* 13b. TABLE-BASED LAYOUT
+   Table layout dipakai sesuai ketentuan tugas mata kuliah Pemrograman
+   Web. Pada praktik modern, layout sebaiknya memakai CSS Grid/Flexbox. */
+.layout-table { width: calc(100% + 56px); border-collapse: separate; border-spacing: 28px 0; margin: 0 -28px; }
+.layout-table > tbody > tr > td { vertical-align: top; width: 50%; }
+.layout-table td.col-text { vertical-align: middle; }
+.layout-table td.col-img img { width: 100%; height: 380px; object-fit: cover; }
+.layout-table.cols-3 > tbody > tr > td { width: 33.333%; }
+.layout-table.cols-4 > tbody > tr > td { width: 25%; }
+.layout-table.cols-3, .layout-table.cols-4 { margin-top: 36px; }
+.footer-table { width: min(1120px, 100%); margin: 0 auto; border-collapse: separate; border-spacing: 36px 0; }
+.footer-table td { vertical-align: top; }
+.footer-table td:first-child { width: 32%; }
+.section-dark + .cta { border-top: 1px solid rgba(255,255,255,.12); }
+
+/* 13c. TABEL DATA & PROMO */
+.data-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #dcd8cc; }
+.data-table caption { caption-side: top; text-align: left; font-family: var(--serif); font-size: 18px; color: var(--brass-dark); padding-bottom: 10px; }
+.data-table thead th { background: var(--dark); color: #fff; padding: 14px 16px; text-align: left; font-family: var(--serif); font-size: 16px; letter-spacing: .3px; }
+.data-table thead th.num { text-align: right; }
+.data-table tbody td { padding: 13px 16px; border-bottom: 1px solid var(--beige); font-size: 14px; vertical-align: top; }
+.data-table tbody tr:nth-child(even) { background: var(--cream); }
+.data-table tbody tr:hover { background: #f1ede4; }
+.data-table td.price-cell { text-align: right; white-space: nowrap; color: var(--brass-dark); font-weight: bold; }
+.data-table.table-dark { background: transparent; border-color: #2a352f; }
+.data-table.table-dark caption { color: var(--brass); }
+.data-table.table-dark thead th { background: var(--brass); color: var(--dark); }
+.data-table.table-dark tbody td { border-bottom: 1px solid rgba(255,255,255,.12); color: #e8e6e0; }
+.data-table.table-dark tbody tr:nth-child(even) { background: rgba(255,255,255,.03); }
+.data-table.table-dark tbody tr:hover { background: rgba(255,255,255,.07); }
+.data-table td a { color: var(--brass-dark); border-bottom: 1px solid var(--brass-dark); }
+.badge { display: inline-block; background: var(--brass); color: var(--dark); padding: 2px 8px; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; border-radius: 3px; }
+.table-wrap { width: 100%; overflow-x: auto; margin-top: 24px; }
+.table-note { font-size: 12px; color: var(--muted); margin-top: 10px; }
+.data-table tbody tr.selected { background: #f1ede4; }
+
 /* 14. RESPONSIVE */
 /* Tablet */
 @media (max-width: 900px) {
@@ -166,6 +202,14 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: normal; line-height: 1.
   .split { grid-template-columns: 1fr; gap: 32px; }
   .split.reverse > img { order: 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  .layout-table, .layout-table > tbody, .layout-table > tbody > tr, .layout-table > tbody > tr > td { display: block; width: 100% !important; }
+  .layout-table { border-spacing: 0; margin: 0; }
+  .layout-table > tbody > tr > td { margin-bottom: 24px; }
+  .layout-table td.col-img img { height: 260px; margin-bottom: 20px; }
+  .footer-table, .footer-table tbody, .footer-table tr, .footer-table td, .footer-table td:first-child { display: block; width: 100%; }
+  .footer-table { border-spacing: 0; }
+  .footer-table td { margin-bottom: 28px; }
 
   /* Navbar berubah jadi menu tombol (hamburger) */
   .nav-toggle { display: block; }
@@ -177,6 +221,13 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: normal; line-height: 1.
 /* Smartphone */
 @media (max-width: 600px) {
   .section { padding: 60px 0; }
+  .data-table thead { display: none; }
+  .data-table, .data-table tbody, .data-table tr, .data-table td { display: block; width: 100%; }
+  .data-table tr { border: 1px solid #dcd8cc; margin-bottom: 12px; padding: 8px; background: #fff; }
+  .data-table td { border: 0; padding: 8px 10px; }
+  .data-table td.price-cell { text-align: left; }
+  .data-table td::before { content: attr(data-label); display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 2px; }
+  .data-table.table-dark td::before { color: var(--brass); }
   .grid-3, .grid-4, .gallery-grid, .row-3, .footer-grid { grid-template-columns: 1fr; }
   .split > img { height: 260px; }
   .form { padding: 22px; }

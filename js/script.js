@@ -150,3 +150,10 @@ document.querySelectorAll('img').forEach(img => {
       '<text x="50%" y="50%" fill="#7a5a2c" font-family="Georgia" font-size="22" text-anchor="middle">Gambar tidak tersedia</text></svg>');
   }, { once: true });
 });
+
+/* 8. TABEL DATA: klik baris untuk highlight (opsional) */
+document.querySelectorAll('.data-table tbody tr').forEach(row => {
+  row.addEventListener('click', () => {
+    row.classList.toggle('selected');
+  });
+});

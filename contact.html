@@ -37,8 +37,10 @@
     </div></section>
 
     <section class="section">
-      <div class="container split top">
-        <div>
+      <div class="container">
+<!-- Table-based layout sesuai ketentuan tugas -->
+<table class="layout-table"><tbody><tr>
+<td class="col-info">
           <h2>Informasi</h2>
           <dl class="info-list">
             <dt>Alamat</dt><dd>Jl. Margonda Raya No. 27, Depok, Jawa Barat</dd>
@@ -51,10 +53,9 @@
               <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook Maison Serein</a>
             </dd>
           </dl>
-        </div>
-
-        <!-- FORM KONTAK: divalidasi oleh js/script.js -->
-        <form id="contactForm" class="form" novalidate>
+        </td>
+<!-- FORM KONTAK: divalidasi oleh js/script.js -->
+<td class="col-form"><form id="contactForm" class="form" novalidate>
           <h2>Kirim pesan</h2>
         <div class="field">
           <label for="cName">Nama</label>
@@ -73,11 +74,24 @@
         </div>
           <button type="submit" class="btn btn-dark">Send Message</button>
           <p class="form-success" id="contactSuccess" role="status"></p>
-        </form>
-      </div>
-    </section>
+        </form></td>
+</tr></tbody></table>
+</div>
+</section>
 
-    <!-- PETA: iframe Google Maps -->
+    <section class="section">
+<div class="container">
+<h2>Jam Operasional &amp; Kontak Cepat</h2>
+<p>Cek jam buka kami dan hubungi bagian yang sesuai.</p>
+<!-- Tabel data untuk konten promosi -->
+<div class="table-wrap"><table class="data-table "><caption>Jam Operasional</caption><thead><tr><th scope="col">Hari</th><th scope="col">Jam Buka</th><th scope="col">Jam Tutup</th><th scope="col">Catatan</th></tr></thead><tbody><tr><td data-label="Hari">Senin</td><td data-label="Jam Buka">–</td><td data-label="Jam Tutup">–</td><td data-label="Catatan">Tutup</td></tr><tr><td data-label="Hari">Selasa–Kamis</td><td data-label="Jam Buka">11.00</td><td data-label="Jam Tutup">22.00</td><td data-label="Catatan">Pesanan terakhir 21.30.</td></tr><tr><td data-label="Hari">Jumat–Sabtu</td><td data-label="Jam Buka">11.00</td><td data-label="Jam Tutup">22.00</td><td data-label="Catatan">Live Jazz Trio pada Jumat malam. Reservasi disarankan.</td></tr><tr><td data-label="Hari">Minggu</td><td data-label="Jam Buka">11.00</td><td data-label="Jam Tutup">22.00</td><td data-label="Catatan">Sunday Roast pukul 12.00–15.00.</td></tr></tbody></table></div>
+<div style="height:28px"></div>
+<!-- Tabel data untuk konten promosi -->
+<div class="table-wrap"><table class="data-table "><caption>Kontak Cepat</caption><thead><tr><th scope="col">Keperluan</th><th scope="col">Kontak</th><th scope="col">Jam Layanan</th></tr></thead><tbody><tr><td data-label="Keperluan">Reservasi</td><td data-label="Kontak"><a href="tel:+6221777652">(021) 777 652</a></td><td data-label="Jam Layanan">Selasa–Minggu, 11.00–21.00</td></tr><tr><td data-label="Keperluan">Event &amp; Private Dining</td><td data-label="Kontak"><a href="mailto:events@maisonserein.id">events@maisonserein.id</a></td><td data-label="Jam Layanan">Selasa–Jumat, 10.00–17.00</td></tr><tr><td data-label="Keperluan">Karier</td><td data-label="Kontak"><a href="mailto:karier@maisonserein.id">karier@maisonserein.id</a></td><td data-label="Jam Layanan">Selasa–Jumat, 10.00–17.00</td></tr><tr><td data-label="Keperluan">Media &amp; Press</td><td data-label="Kontak"><a href="mailto:media@maisonserein.id">media@maisonserein.id</a></td><td data-label="Jam Layanan">Selasa–Jumat, 10.00–17.00</td></tr></tbody></table></div>
+</div>
+</section>
+
+<!-- PETA: iframe Google Maps -->
     <section class="map">
       <iframe title="Lokasi Maison Serein di Jl. Margonda Raya, Depok"
         src="https://www.google.com/maps?q=Jl.+Margonda+Raya+Depok&amp;output=embed"
@@ -88,12 +102,11 @@
 
   <!-- FOOTER: sama di semua halaman -->
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
+    <!-- Table-based layout sesuai ketentuan tugas -->
+<table class="footer-table"><tbody><tr><td>
         <a href="index.html" class="logo">Maison <span>Serein</span></a>
         <p>Hidangan Eropa yang sederhana, disajikan dengan tenang.</p>
-      </div>
-      <div>
+      </td><td>
         <h4>Halaman</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -103,16 +116,13 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="reservation.html">Reservation</a></li>
         </ul>
-      </div>
-      <div>
+      </td><td>
         <h4>Alamat</h4>
         <p>Jl. Margonda Raya No. 27<br>Depok, Jawa Barat</p>
-      </div>
-      <div>
+      </td><td>
         <h4>Jam buka</h4>
         <p>Selasa sampai Minggu<br>11.00 sampai 22.00<br>Senin tutup</p>
-      </div>
-    </div>
+      </td></tr></tbody></table>
     <p class="copyright">&copy; 2026 Maison Serein. Website ini dibuat untuk tugas mata kuliah Pemrograman Web.</p>
   </footer>
 
